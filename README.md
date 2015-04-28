@@ -56,6 +56,17 @@ We ultimately end up with a struct:
 	    String data;
 	} Edit;
 
+Here's what an edit file might look like:
+
+	/Never done/I---------------------------------------
+	1,3/IPrepended to 1,2 and 3 :
+	1,1/OThis must appear as the first line
+	A : Appended to all
+	/line for substitution/s/This is one/This has been substituted on a/
+	9,10/d
+	/deleted/IThis should not appear
+	/Never done/I---------------------------------------
+
 ##running
 	
 	gcc svi.c -o svi
