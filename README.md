@@ -50,8 +50,8 @@ to record the details of the line range specification.
 We ultimately end up with a struct:
 
 	typedef struct {
-	    LineSpecType type;		// what type of line range specification
-	    LineSpecRule rule;		// the details of how the line range specification should be applied
+	    LineSpecType type;		// what type of line range spec
+	    LineSpecRule rule;		// the details of how the line range spec should be applied
 	    char edit;				// the type of edit being performed
 	    String data;
 	} Edit;
